@@ -4,6 +4,8 @@ var fs = require("fs");
 http
   .createServer((req, res) => {
     console.log("this is testing")
+    console.log("this is testing - 2")
+
     if (req.method === "POST") {
       let body = "";
       req.on("data", (chunk) => {
