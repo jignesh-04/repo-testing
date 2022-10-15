@@ -3,6 +3,7 @@ var http = require("http");
 var fs = require("fs");
 http
   .createServer((req, res) => {
+    console.log("this is testing")
     if (req.method === "POST") {
       let body = "";
       req.on("data", (chunk) => {
